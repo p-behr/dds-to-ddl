@@ -42,3 +42,4 @@ This is intended to be a helper, not a flawless converter that you mindlessly ru
 * Does not handle multi-format files.
 * Does not (yet) handle select/omit.
 * Probably many others...
+* When generating SQL names it will use REGEXP_REPLACE.  This requires Interanational Components for Unicode (ICU) to be installed.  If you don't have ICU install, this SQL will fail and you may have spaces and/or special characters in your field names (that you will have to fix manually).
